@@ -17,6 +17,7 @@
 	<link href="css/sampro.css" rel="stylesheet">
 	<link href="HQ/bootstrap/navbar.less" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
   </head>
   <body>
   <br><br><br>
