@@ -4,20 +4,25 @@
 
 $websitetitle = "Desert County Roleplay";
 $websitename = "Desert County Roleplay";
-$websitedescription = "San Andreas Multiplayer roleplaying community, based in a county.";
+$websitedescription = "San Andreas Multiplayer roleplaying community, based in Bone County.";
 $siteversion = "v1";
 $urlsite = "/";
 $copydate = "2018";
 $logo   = "images/logo.png";
 $favicon = "favicon.ico";
 $backgroundrgba = "237,237,237";
+$samp_ip = "138.68.147.236";
+$samp_port = 7777;
   
 // database
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_SERVER', 'dc-rp.com');
+define('DB_USERNAME', 'samp_server');
+define('DB_PASSWORD', 'IJta0WFpQV9TJl55');
 define('DB_NAME', 'sa-mp');
+
+define('SAMP_IP', '138.68.147.236');
+define('SAMP_PORT', 7777);
 
 $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
