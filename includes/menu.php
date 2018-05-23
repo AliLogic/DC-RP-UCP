@@ -39,11 +39,11 @@
           <div id="navbar1" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="color-white"><a href="<?php echo $urlsite; ?>"<i class="fa fa-home"> Home</a></li>
-			  <li class="color-white"><a href="forum/"><i class="fa fa-comments"></i> Forums</a></li>
-        <li class="color-white"><a href="#"><i class="fa fa-gears"></i> Changelog</a></li>
-			  <li class="color-white"><a href="#"><i class="fa fa-shopping-cart"></i> Donate</a></li>
-			  <li class="color-white"><a href="#"><i class="fa fa-star"></i> Staff</a></li>
-         <li class="color-white"><a href="#"><i class="fa fa-question"></i> FAQ</a></li>
+			  <li class="color-white"><a href="https://dc-rp.com/forum/"><i class="fa fa-comments"></i> Forums</a></li>
+        <li class="color-white"><a href="changelog.php"><i class="fa fa-gears"></i> Changelog</a></li>
+			  <li class="color-white"><a href="donate.php"><i class="fa fa-shopping-cart"></i> Donate</a></li>
+			  <li class="color-white"><a href="staff.php"><i class="fa fa-star"></i> Staff</a></li>
+         <li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
