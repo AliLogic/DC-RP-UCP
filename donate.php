@@ -25,32 +25,32 @@
                         <div id="phonenumber-button"></div>
                         <h3 class="color-black text-center">Bronze Donator</h3>
                         <p><ul>
-                            <li>Will be able to get permanent BMX permission.</li>
-                            <li>Will be able to purchase a BMX (Must still pay the usual IC amount), this bike is just unlocked.</li>
-                            <li>Will be given 1 free namechange.</li>
-                            <li>Will be given 1 free phone number change.</li>
-                            <li>Ability to use /blockpm. (Cannot block administrators though)</li>
+                            <li>Ability for permanent BMX permission.</li>
+                            <li>Ability to purchase a BMX (Must still pay the usual IC amount), this bike is just unlocked.</li>
+                            <li>Will be granted 1 free namechange.</li>
+                            <li>Will be granted 1 free phone number change.</li>
+                            <li>Ability to use /blockpm (Excluding staff members).</li>
                             <li>Access to an in-game donator chat (/dc).</li>
-                            <li>Permanent Access to Donator Lounge on Forums.</li>
+                            <li>Permanent access to Donator Lounge on Forums.</li>
                             <li>Donator Role on Discord.</li>
                         </ul>
                         <strong>Price:</strong> £2.50</p>
                         <div id="bronze-button"></div>
                         <h3 class="color-black text-center">Silver Donator</h3>
                         <p><ul>
-                            <li>Will be able to make an /ad at 30 seconds instead of the usual 60 seconds.</li>
-                            <li>Will be able to purchase a BMX, Quad and ZR-350 (Must still pay the usual IC amount), these cars are just unlocked.</li>
-                            <li>Will be given 2 free namechanges.</li>
-                            <li>Will be given 2 free phone number change.</li>
-                            <li>Will also have Bronze Features</li>
+                            <li>Ability to make an /ad at 30 seconds instead of the usual 60 seconds.</li>
+                            <li>Ability to purchase a BMX, Quad and ZR-350 (Must still pay the usual IC amount), these cars are just unlocked.</li>
+                            <li>Will be granted 2 free namechanges.</li>
+                            <li>Will be granted 2 free phone number change.</li>
+                            <li>Will also have Bronze Features.</li>
                         </ul>
                         <strong>Price:</strong> £5.00</p>
                         <div id="silver-button"></div>
                         <h3 class="color-black text-center">Gold Donator</h3>
                         <p><ul>
-                            <li>Will be able to purchase BMX, Quad, ZR-350, Cheetah, Turismo, Bullet and Super GT from Dealership (Must still pay the usual IC amount), these cars are just unlocked.</li>
-                            <li>Will be given 5 free namechanges.</li>
-                            <li>Will be given 5 free phone number change.
+                            <li>Ability to purchase BMX, Quad, ZR-350, Cheetah, Turismo, Bullet and Super GT from Dealership (Must still pay the usual IC amount), these cars are just unlocked.</li>
+                            <li>Will be granted 5 free namechanges.</li>
+                            <li>Will be granted 5 free phone number change.
                             <li>Will also have Bronze and Silver Features.</li>
                         </ul>
                         <strong>Price:</strong> £10.00</p>
