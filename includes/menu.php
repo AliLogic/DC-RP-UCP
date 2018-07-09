@@ -50,7 +50,7 @@
                 <a id="start" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-sign-in"></i> Control Panel <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
 				  <li class="dropdown-header"></li>
-                  <li><a href="#"><img src="images/social/social_samp.png" /> <?php echo "Login"; ?></a></li>
+                  <li><a href="#"><img src="images/social/social_samp.jpg" /> <?php echo "Login"; ?></a></li>
                 </ul>
               </li>
             </ul>
