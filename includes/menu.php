@@ -14,7 +14,7 @@
             <ul class="nav navbar-nav">
                
 			  
-			  <li class="color-white"><a href="playerlist.php"><i class="fa fa-users"></i> List of connected players </a></li>
+			  <!--<li class="color-white"><a href="playerlist.php"><i class="fa fa-users"></i> List of connected players </a></li>-->
             </ul>
 			<ul class="nav navbar-nav navbar-right">
 			<li><a href="#" target="_blank" class ="fa fa-facebook"></a></li>
