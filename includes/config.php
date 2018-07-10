@@ -16,7 +16,7 @@ $samp_port = 7777;
   
 // database
 
-define('DB_SERVER', 'dc-rp.com');
+define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'samp_server');
 define('DB_PASSWORD', 'IJta0WFpQV9TJl55');
 define('DB_NAME', 'sa-mp');
