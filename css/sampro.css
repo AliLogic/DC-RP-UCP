@@ -1,5 +1,5 @@
 a{
-    color:red;
+    color:#8C5E39;
 }
  
 .color-white{
@@ -30,8 +30,8 @@ a{
   margin:0;
   padding:0;
   background: url(images/bg_night_2.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+  -webkit-background-size: cover; /* for Chrome and Safari */
+  background-size: cover; /* Standard Version */
 }
 
 .slider {
