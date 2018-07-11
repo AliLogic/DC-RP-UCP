@@ -16,7 +16,7 @@ $samp_port = 7777;
   
 // database
 
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', '138.68.147.236');
 define('DB_USERNAME', 'samp_server');
 define('DB_PASSWORD', 'IJta0WFpQV9TJl55');
 define('DB_NAME', 'sa-mp');
@@ -36,7 +36,7 @@ $forums= "forums";
 $controlpanel = "panel";
 $donate = "donate";
 $servername = "Desert County Roleplay";
-$topnavbarcolor = "red";
+$topnavbarcolor = "#8C5E39";
   
 // index configuration
 $paragraph1 = "<p>Hello and welcome, players of Desert County Roleplay to our 2nd monthly newsletter!<br><br>

@@ -1,5 +1,5 @@
     <!--header navbar -->
-      <nav style="background-color : rgba(0,0,0,0.8); border-bottom: <?php echo $topnavbarcolor; ?> 3px solid;" class="navbar navbar-inverse navbar-fixed-top" height="5">
+      <nav style="background-color : rgba(0,0,0,0.8); border-bottom: <?php echo $topnavbarcolor; ?> 0.5em solid;" class="navbar navbar-inverse navbar-fixed-top" height="5">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -14,12 +14,7 @@
             <ul class="nav navbar-nav">
                
 			  
-			  <!--<li class="color-white"><a href="playerlist.php"><i class="fa fa-users"></i> List of connected players </a></li>-->
-            </ul>
-			<ul class="nav navbar-nav navbar-right">
-			<li><a href="#" target="_blank" class ="fa fa-facebook"></a></li>
-			<li><a href="#" target="_blank" class = "fa fa-twitter"></a></li>
-			<li><a href="#" target="_blank" class = "fa fa-instagram"></a></li>
+			      <!--<li class="color-white"><a href="playerlist.php"><i class="fa fa-users"></i> List of connected players </a></li>-->
             </ul>
           </div>
         </div>
@@ -38,19 +33,19 @@
           </div>
           <div id="navbar1" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="color-white"><a href="<?php echo $urlsite; ?>"<i class="fa fa-home"> Home</a></li>
+              <li class="color-white"><a href="index.php?page=home"<i class="fa fa-home"> Home</a></li>
 			  <li class="color-white"><a href="https://dc-rp.com/forum/"><i class="fa fa-comments"></i> Forums</a></li>
-        <li class="color-white"><a href="changelog.php"><i class="fa fa-gears"></i> Changelog</a></li>
-			  <li class="color-white"><a href="donate.php"><i class="fa fa-shopping-cart"></i> Donate</a></li>
-			  <li class="color-white"><a href="staff.php"><i class="fa fa-star"></i> Staff</a></li>
-         <li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>
+        <!--<li class="color-white"><a href="changelog.php"><i class="fa fa-gears"></i> Changelog</a></li>-->
+			  <li class="color-white"><a href="index.php?page=donate"><i class="fa fa-shopping-cart"></i> Donate</a></li>
+			  <li class="color-white"><a href="index.php?page=staff"><i class="fa fa-star"></i> Staff</a></li>
+         <!--<li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>-->
             </ul>
-			<ul class="nav navbar-nav navbar-right">
+			      <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a id="start" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-sign-in"></i> Control Panel <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-				  <li class="dropdown-header"></li>
-                  <li><a href="#"><img src="images/social/social_samp.jpg" /> <?php echo "Login"; ?></a></li>
+                  <li class="dropdown-header"></li>
+                  <?php include_once("includes/logincheck.php"); ?>
                 </ul>
               </li>
             </ul>

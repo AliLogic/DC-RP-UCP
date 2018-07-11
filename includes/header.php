@@ -20,6 +20,34 @@
   <script src="https://www.paypalobjects.com/api/checkout.js"></script>
   </head>
   <body>
+  <style>
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size:2em;
+    }
+
+    h2 {
+      font-size:1.5em;
+    }
+
+    h3 {
+      font-size:1em;
+    }
+
+    h4 {
+      font-size:0.8em;
+    }
+
+    h5 {
+      font-size:0.6em;
+    }
+
+    h6 {
+      font-size:0.4em;
+    }
+  }
+  </style>
+
   <br><br><br>
   <div class="text-center">
   <a href="/"><img class="logo" src="<?php echo $logo; ?>"/></a>
