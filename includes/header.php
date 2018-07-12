@@ -1,4 +1,6 @@
-<?php include('includes/core.php'); ?>
+<?php require_once('includes/config.php'); 
+require_once('includes/init.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
