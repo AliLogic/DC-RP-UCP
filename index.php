@@ -43,7 +43,8 @@ include('includes/header.php');
         }
         else if($_GET["page"] == "logout")
         {
-            session_destroy(); 
+            session_destroy();
+            session_unset();
             echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login">';
             exit();
         }

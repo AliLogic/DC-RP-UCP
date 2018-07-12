@@ -8,11 +8,23 @@ if(IsLoggedIn())
         {
             if($_GET["admin"] == "ban")
             {
-                if($_GET["sect"] == "check")
+                if(isset($_GET["sect"]) || !empty($_GET["sect"]))
                 {
-                    require_once("acp_ban_check.html");  
+                    if($_GET["sect"] == "check")
+                    {
+                        require_once("acp_ban_check.php");  
+                    }
+                    else if($_GET["sect"] == "checkinfo")
+                    {
+                        require_once("acp_ban_checkinfo.php");  
+                    }
+                    else if($_GET["sect"] == "remove")
+                    {
+                        require_once("acp_ban_remove.php");  
+                    }
+                    else require_once("acp_ban.html");
                 }
-                else require_once("acp_ban.html");  
+                else require_once("acp_ban.html");
             }
             else if($_GET["admin"] == "records")
             {
