@@ -31,7 +31,7 @@ $Banned = false;
 
 function IsLoggedIn()
 {
-    if(isset($_SESSION["AccountID"]) || !empty($_SESSION["AccountID"]))
+    if(isset($_SESSION["DCRP_AccountID"]) || !empty($_SESSION["DCRP_AccountID"]))
     {
         return true;
     }
@@ -40,7 +40,7 @@ function IsLoggedIn()
 
 if(IsLoggedIn())
 {
-  $query = "SELECT * FROM `players` WHERE id = ".$_SESSION["AccountID"]." LIMIT 1";
+  $query = "SELECT * FROM `players` WHERE id = ".$_SESSION["DCRP_AccountID"]." LIMIT 1";
   $result = mysqli_query($connect, $query);
 
   while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
@@ -50,7 +50,7 @@ if(IsLoggedIn())
   }
 
   //SELECT * FROM `bans` WHERE `AccountID` = 2 OR `IPAddress` = '192.168.0.1' LIMIT 1
-  $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["AccountID"]." OR IPAddress = ".$_SERVER["REMOTE_ADDR"]." LIMIT 1";
+  $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["DCRP_AccountID"]." OR IPAddress = ".$_SERVER["REMOTE_ADDR"]." LIMIT 1";
   $result = mysqli_query($connect, $query);
 
   while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))

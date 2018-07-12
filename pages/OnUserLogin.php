@@ -24,7 +24,7 @@ if (isset($_POST['username']) && isset($_POST['password']))
 
     if($securePassword == $storedPassword)
     {
-        $_SESSION["AccountID"] = $storedID;
+        $_SESSION["DCRP_AccountID"] = $storedID;
         Header("Location: ../index.php?page=home");
     }
     else Header("Location: ../index.php?page=login&error=1");

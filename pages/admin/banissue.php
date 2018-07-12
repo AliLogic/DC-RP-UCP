@@ -26,7 +26,7 @@ if(isset($_POST["username"]))
         $unbanDate = strtotime(mysqli_real_escape_string($connect, $_POST["expire"]));
     }
 
-    $query = "SELECT `username` FROM `players` WHERE `id` = ".$_SESSION['AccountID']." LIMIT 1";
+    $query = "SELECT `username` FROM `players` WHERE `id` = ".$_SESSION['DCRP_AccountID']." LIMIT 1";
     $player_result = mysqli_query($connect, $query);
     
     while($row = mysqli_fetch_array($player_result, MYSQLI_ASSOC))
