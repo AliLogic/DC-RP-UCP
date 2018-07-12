@@ -1,7 +1,7 @@
 <?php session_start();
 
-require_once('../../includes/config.php');
-require_once('../../includes/init.php');
+require_once('../../../includes/config.php');
+require_once('../../../includes/init.php');
 
 if(isset($_POST["username"]))
 {
@@ -10,7 +10,7 @@ if(isset($_POST["username"]))
 
     if(!isset($reason))
     {
-        header("Location: ../../index.php?page=acp&admin=ban&sect=issue&error=2"); // Reason is empty.
+        header("Location: ../../../index.php?page=acp&admin=ban&sect=issue&error=2"); // Reason is empty.
         exit();
     }
 
@@ -40,7 +40,7 @@ if(isset($_POST["username"]))
     $accID = 0;
     if(mysqli_num_rows($player_result) < 1)
     {
-        header("Location: ../../index.php?page=acp&admin=ban&sect=issue&error=3"); // No such player exists
+        header("Location: ../../../index.php?page=acp&admin=ban&sect=issue&error=3"); // No such player exists
         exit();
     }
     while($row = mysqli_fetch_array($player_result, MYSQLI_ASSOC))
@@ -65,7 +65,7 @@ if(isset($_POST["username"]))
     $query = "INSERT INTO `ban_logs` (`BannedDBID`, `BannedName`, `Reason`, `BannedBy`, `Date`) VALUES ($accID, '".$username."', '".$reason."', '".$adminName."', '".date('d/m/Y H:i:s', time())."')";
     $log_result = mysqli_query($connect, $query);
     
-    header("Location: ../../index.php?page=acp&admin=ban&sect=issue&error=1");// Ban issued
+    header("Location: ../../../index.php?page=acp&admin=ban&sect=issue&error=1");// Ban issued
     exit();
 }
-else header("Location: ../../index.php?page=acp&admin=ban&sect=remove");
+else header("Location: ../../../index.php?page=acp&admin=ban&sect=remove");

@@ -1,7 +1,7 @@
 <?php session_start();
 
-require_once('../../includes/config.php');
-require_once('../../includes/init.php');
+require_once('../../../includes/config.php');
+require_once('../../../includes/init.php');
 
 if(isset($_POST["username"]))
 {
@@ -31,9 +31,9 @@ if(isset($_POST["username"]))
     $numRemoved = mysqli_affected_rows($connect);
     if($numRemoved >= 1)
     {
-        header("Location: ../../index.php?page=acp&admin=ban&sect=remove&error=1&num=".$numRemoved);
+        header("Location: ../../../index.php?page=acp&admin=ban&sect=remove&error=1&num=".$numRemoved);
         exit();
     }
-    else header("Location: ../../index.php?page=acp&admin=ban&sect=remove&error=2");
+    else header("Location: ../../../index.php?page=acp&admin=ban&sect=remove&error=2");
 }
-else header("Location: ../../index.php?page=acp&admin=ban&sect=remove");
+else header("Location: ../../../index.php?page=acp&admin=ban&sect=remove");

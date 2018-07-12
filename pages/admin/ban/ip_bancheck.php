@@ -1,7 +1,7 @@
 <?php session_start();
 
-require_once('../../includes/config.php');
-require_once('../../includes/init.php');
+require_once('../../../includes/config.php');
+require_once('../../../includes/init.php');
 
 $unsafeString = $_POST["ipaddr"];
 if(isset($unsafeString))
@@ -31,10 +31,10 @@ if(isset($unsafeString))
         while($row = mysqli_fetch_array($player_result, MYSQLI_ASSOC))
         {
             $_SESSION["Lookup_Username"] = $row["username"];
-            header("Location: ../../index.php?page=acp&admin=ban&sect=checkinfo");
+            header("Location: ../../../index.php?page=acp&admin=ban&sect=checkinfo");
             exit();
         }
     }
-    else header("Location: ../../index.php?page=acp&admin=ban&sect=check&error=2");
+    else header("Location: ../../../index.php?page=acp&admin=ban&sect=check&error=2");
 }
-else header("Location: ../../index.php?page=acp&admin=ban&sect=check");
+else header("Location: ../../../index.php?page=acp&admin=ban&sect=check");

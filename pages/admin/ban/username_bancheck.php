@@ -1,7 +1,7 @@
 <?php session_start();
 
-require_once('../../includes/config.php');
-require_once('../../includes/init.php');
+require_once('../../../includes/config.php');
+require_once('../../../includes/init.php');
 
 $unsafeString = $_POST["username"];
 if(isset($unsafeString))
@@ -31,10 +31,10 @@ if(isset($unsafeString))
             $_SESSION["Lookup_IPAddress"] = $row["IPAddress"];
             $_SESSION["Lookup_BanDate"] = $row["BanDate"];
             $_SESSION["Lookup_Serial"] = $row["Serial"];
-            header("Location: ../../index.php?page=acp&admin=ban&sect=checkinfo");
+            header("Location: ../../../index.php?page=acp&admin=ban&sect=checkinfo");
             exit();
         }
     }
-    else header("Location: ../../index.php?page=acp&admin=ban&sect=check&error=1");
+    else header("Location: ../../../index.php?page=acp&admin=ban&sect=check&error=1");
 }
-else echo "Goto check", header("Location: ../../index.php?page=acp&admin=ban&sect=check");
+else header("Location: ../../../index.php?page=acp&admin=ban&sect=check");
