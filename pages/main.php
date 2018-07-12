@@ -15,7 +15,7 @@ if(mysqli_num_rows($result) > 0)
 
                         <h1 class="color-black text-left"><i class="fa fa-fw fa-home"></i> '.$row["Title"].'</h1>
                         <a class="news-link"></a><small class="text-muted">'.$row["Poster"].'<br>'.date("F d, Y, H:i:s",$row["Timestamp"]).'</small> <br><br>
-                        '.BBCodeToHTML(strip_tags($row["Message"])).'
+                        '.BBCodeToHTML(strip_tags(htmlspecialchars($row["Message"]))).'
 
                     </div>
                 </div>
