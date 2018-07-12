@@ -4,7 +4,7 @@
             <div class ="news" style="background-color : #E5E6EB;">
                 <h2>Ban Check:</h2>
                 <p>Please only fill out one of the forms</p>
-                <form method="POST" action="pages/admin/username_bancheck.php">
+                <form method="POST" action="pages/admin/ban/username_bancheck.php">
                     <h3>Check by Username:</h3>
                     <?php
                     if(!empty($_GET["error"]) && $_GET["error"] == 1)
@@ -19,7 +19,7 @@
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>
-                <form method="POST" action="pages/admin/ip_bancheck.php">
+                <form method="POST" action="pages/admin/ban/ip_bancheck.php">
                     <h3>Check by IP:</h3>
                     <?php
                     if(!empty($_GET["error"]) && $_GET["error"] == 2)
@@ -34,7 +34,7 @@
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>
-                <form method="POST" action="pages/admin/gpci_bancheck.php">
+                <form method="POST" action="pages/admin/ban/gpci_bancheck.php">
                     <h3>Check by GPCI/Serial:</h3>
                     <?php
                     if(!empty($_GET["error"]) && $_GET["error"] == 3)

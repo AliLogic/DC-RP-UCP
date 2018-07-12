@@ -12,23 +12,23 @@ if(IsLoggedIn())
                 {
                     if($_GET["sect"] == "check")
                     {
-                        require_once("acp_ban_check.php");  
+                        require_once("ban/acp_ban_check.php");  
                     }
                     else if($_GET["sect"] == "checkinfo")
                     {
-                        require_once("acp_ban_checkinfo.php");  
+                        require_once("ban/acp_ban_checkinfo.php");  
                     }
                     else if($_GET["sect"] == "remove")
                     {
-                        require_once("acp_ban_remove.php");  
+                        require_once("ban/acp_ban_remove.php");  
                     }
                     else if($_GET["sect"] == "issue")
                     {
-                        require_once("acp_ban_issue.php");  
+                        require_once("ban/acp_ban_issue.php");  
                     }
-                    else require_once("acp_ban.html");
+                    else require_once("ban/acp_ban.html");
                 }
-                else require_once("acp_ban.html");
+                else require_once("ban/acp_ban.html");
             }
             else if($_GET["admin"] == "records")
             {
@@ -36,15 +36,15 @@ if(IsLoggedIn())
                 {
                     if($_GET["sect"] == "check")
                     {
-                        require_once("acp_viewrecords.php");
+                        require_once("records/acp_viewrecords.php");
                     }
-                    else require_once("acp_records.php");  
+                    else require_once("records/acp_records.php");  
                 }
-                else require_once("acp_records.php");  
+                else require_once("records/acp_records.php");  
             }
             else if($_GET["admin"] == "notes")
             {
-                require_once("acp_ban.html");  
+                require_once("notes/acp_notes.html");  
             }
             else if($_GET["admin"] == "logs")
             {

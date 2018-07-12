@@ -28,7 +28,7 @@
                 }
 
                 ?>
-                <form method="POST" action="pages/admin/banremove.php">
+                <form method="POST" action="pages/admin/ban/banremove.php">
                     <h3>Remove Ban:</h3>
                     <div class="form-group">
                         <label for="username">Username:</label>

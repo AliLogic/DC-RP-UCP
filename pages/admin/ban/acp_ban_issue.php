@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
                 <h2>Issue Ban:</h2>
-                <form method="POST" action="pages/admin/banissue.php">
+                <form method="POST" action="pages/admin/ban/banissue.php">
                     <div class="form-group">
                         <?php
                         if(!empty($_GET["error"]))
