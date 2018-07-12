@@ -2,7 +2,7 @@
 if(IsLoggedIn())
 {
     if($AdminLevel >= 1)
-    {
+    {        
         require_once("acp_tabs.php");
         if(isset($_GET["admin"]) || !empty($_GET["admin"]))
         {
@@ -32,7 +32,15 @@ if(IsLoggedIn())
             }
             else if($_GET["admin"] == "records")
             {
-                require_once("acp_ban.html");  
+                if(isset($_GET["sect"]) || !empty($_GET["sect"]))
+                {
+                    if($_GET["sect"] == "check")
+                    {
+                        require_once("acp_viewrecords.php");
+                    }
+                    else require_once("acp_records.php");  
+                }
+                else require_once("acp_records.php");  
             }
             else if($_GET["admin"] == "notes")
             {
