@@ -10,9 +10,6 @@
             <label for="password">Password:</label><br>
             <input name="password" type="password" class="form-control" id="password" required><br>
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
-            </div>
             <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>
