@@ -15,7 +15,7 @@ $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 if(mysqli_connect_errno() || $connect === false)
 {
-  die("<b>ERROR:</b> Unable to connect to the database." . mysqli_connect_error());
+  die("<b>ERROR:</b> Unable to connect to the database: " . mysqli_connect_error());
 }
 
 // navbar configuration
