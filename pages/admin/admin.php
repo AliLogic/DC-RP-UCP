@@ -22,6 +22,10 @@ if(IsLoggedIn())
                     {
                         require_once("acp_ban_remove.php");  
                     }
+                    else if($_GET["sect"] == "issue")
+                    {
+                        require_once("acp_ban_issue.php");  
+                    }
                     else require_once("acp_ban.html");
                 }
                 else require_once("acp_ban.html");
