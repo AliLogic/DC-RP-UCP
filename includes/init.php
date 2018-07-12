@@ -48,15 +48,4 @@ if(IsLoggedIn())
     $AdminLevel = $row["AdminLevel"];
     $HelperLevel = $row["HelperLevel"];
   }
-
-  //SELECT * FROM `bans` WHERE `AccountID` = 2 OR `IPAddress` = '192.168.0.1' LIMIT 1
-  $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["DCRP_AccountID"]." OR IPAddress = ".$_SERVER["REMOTE_ADDR"]." LIMIT 1";
-  $result = mysqli_query($connect, $query);
-
-  while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
-  {
-    $Banned = true;
-    $AdminLevel = $row["AdminLevel"];
-    $HelperLevel = $row["HelperLevel"];
-  }
 }

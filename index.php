@@ -9,59 +9,87 @@ include('includes/header.php');
 
     <?php 
     require_once('includes/menu.php'); 
-    require_once('includes/bbcode.php');
 
-    if(!empty($_GET["page"]))
+    $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["DCRP_AccountID"]." OR IPAddress = '".$_SERVER["REMOTE_ADDR"]."' LIMIT 1";
+    $result = mysqli_query($connect, $query);
+
+    $banReason = '';
+    $bannedBy = '';
+    $bannedDate = 0;
+    $unbanDate = 0;
+    $unbanString = '';
+    if(mysqli_num_rows($result) >= 1)
     {
-        if($_GET["page"] == "staff")
+        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
         {
-            require_once("pages/staff.php");
-        }
-        else if($_GET["page"] == "donate")
-        {
-            require_once("pages/donate.php");
-        }
-        else if($_GET["page"] == "news")
-        {
-            require_once("pages/news.php");
-        }
-        else if($_GET["page"] == "about")
-        {
-            require_once("pages/about.php");
-        }
-        else if($_GET["page"] == "login")
-        {
-            if(!IsLoggedIn())
+            $bannedDate = date("d/m/Y H:i:s", $row["BanDate"]);
+            $bannedBy = $row["Admin"];
+            $banReason = $row["Reason"];
+            if($row["BanDate"] >= 1)
             {
-                require_once("pages/login.php");
+                $ubanString = date("d/m/Y H:i:s", $row["BanDate"]);
+                $$unbanDate = $row["BanDate"];
             }
-            else 
-            {
-                echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
-                exit();
-            }
-        }
-        else if($_GET["page"] == "logout")
-        {
-            session_destroy();
-            session_unset();
-            echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login">';
-            exit();
-        }
-        else if($_GET["page"] == "server")
-        {
-            require_once("pages/server.php");
-        }
-        else if($_GET["page"] == "acp")
-        {
-            require_once("pages/admin/admin.php");
-        }
-        else
-        {
-            require_once("pages/main.php");
+            
+            require_once("pages/banned.php");
         }
     }
-    else require_once("pages/main.php");
+    else
+    {
+        require_once('includes/bbcode.php');
+    
+        if(!empty($_GET["page"]))
+        {
+            if($_GET["page"] == "staff")
+            {
+                require_once("pages/staff.php");
+            }
+            else if($_GET["page"] == "donate")
+            {
+                require_once("pages/donate.php");
+            }
+            else if($_GET["page"] == "news")
+            {
+                require_once("pages/news.php");
+            }
+            else if($_GET["page"] == "about")
+            {
+                require_once("pages/about.php");
+            }
+            else if($_GET["page"] == "login")
+            {
+                if(!IsLoggedIn())
+                {
+                    require_once("pages/login.php");
+                }
+                else 
+                {
+                    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
+                    exit();
+                }
+            }
+            else if($_GET["page"] == "logout")
+            {
+                session_destroy();
+                session_unset();
+                echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login">';
+                exit();
+            }
+            else if($_GET["page"] == "server")
+            {
+                require_once("pages/server.php");
+            }
+            else if($_GET["page"] == "acp")
+            {
+                require_once("pages/admin/admin.php");
+            }
+            else
+            {
+                require_once("pages/main.php");
+            }
+        }
+        else require_once("pages/main.php");
+    }
 
     require_once('includes/footer.php');
     require_once('includes/javascript.php'); 
