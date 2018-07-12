@@ -50,7 +50,7 @@ require_once('includes/init.php');
   }
   </style>
 
-  <br><br><br>
+  <br><br><br><br>
   <div class="text-center">
   <a href="/"><img class="logo" src="<?php echo $logo; ?>"/></a>
   </div>
