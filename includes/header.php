@@ -7,7 +7,8 @@ require_once('includes/init.php');
   <title><?php echo $websitetitle; ?></title>
   <link rel="icon" href="<?php echo $favicon; ?>">
   <meta name="description" content="<?php echo $websitedescription; ?>">
-	<meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta keywords="dcrp, ucp, dc-rp, sa:mp, sa-mp, multiplayer, gaming, desert, county, roleplay, user, control, panel, role, play">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
