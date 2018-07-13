@@ -16,37 +16,40 @@
                 }
                 ?>
                 <h3>Admin Notes for <?php echo $username; ?></h3>
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Admin</th>
-                        <th>Date</th>
-                        <th>Message</th>
-                        <th>Delete</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <?php 
-                    $query = "SELECT * FROM `admin_notes` WHERE `AccountID` = ".$_GET['id']." ORDER BY `ID` DESC";
+                <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Admin</th>
+                            <th>Date</th>
+                            <th>Message</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php 
+                        $query = "SELECT * FROM `admin_notes` WHERE `AccountID` = ".$_GET['id']." ORDER BY `ID` DESC";
 
-                    $result = mysqli_query($connect, $query);
-                    $username = '';
-                    if(mysqli_num_rows($result) >= 1)
-                    {
-                        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+                        $result = mysqli_query($connect, $query);
+                        $username = '';
+                        if(mysqli_num_rows($result) >= 1)
                         {
-                            echo '<tr>
-                                <td>'.$row["Admin"].'</td>
-                                <td>'.date("d/m/Y H:i:s", $row["Timestamp"]).'</td>
-                                <td>'.$row["Message"].'</td>
-                                <td><a href="pages/admin/notes/del_note.php?id='.$row["ID"].'&view_id='.$_GET["id"].'">Delete</a></td>
-                            </tr>';
+                            while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+                            {
+                                echo '<tr>
+                                    <td>'.$row["Admin"].'</td>
+                                    <td>'.date("d/m/Y H:i:s", $row["Timestamp"]).'</td>
+                                    <td>'.$row["Message"].'</td>
+                                    <td><a href="pages/admin/notes/del_note.php?id='.$row["ID"].'&view_id='.$_GET["id"].'">Delete</a></td>
+                                </tr>';
+                            }
                         }
-                    }
-                    ?>
-                    
-                    </tbody>
-                </table>
+                        ?>
+                        
+                        </tbody>
+                    </table>
+                </div>
 
                 <?php
                 if(!empty($_GET["error"]) && $_GET["error"] == 1)

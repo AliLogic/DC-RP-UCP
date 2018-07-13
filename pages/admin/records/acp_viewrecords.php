@@ -18,6 +18,8 @@ if(isset($_POST["username"]))
     <div class="col-md-12">
         <div class ="news" style="background-color : #E5E6EB;">
         <h2>Bans</h2>
+        <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+        <div class="table-responsive">
         <table class="table">
     <thead>
         <tr>
@@ -53,6 +55,7 @@ if(isset($_POST["username"]))
     </table></div>
     </div>
     </div>
+    </div>
     </div>';
 
     echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
@@ -60,6 +63,8 @@ if(isset($_POST["username"]))
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
             <h2>Admin Jail</h2>
+            <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+            <div class="table-responsive">
             <table class="table">
         <thead>
             <tr>
@@ -100,6 +105,7 @@ if(isset($_POST["username"]))
     </table></div>
     </div>
     </div>
+    </div>
     </div>';
 
     echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
@@ -107,6 +113,8 @@ if(isset($_POST["username"]))
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
             <h2>Kicks</h2>
+            <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+            <div class="table-responsive">
             <table class="table">
         <thead>
             <tr>
@@ -145,6 +153,7 @@ if(isset($_POST["username"]))
 
     echo '</tbody>
     </table></div>
+    </div>
     </div>
     </div>
     </div>';
