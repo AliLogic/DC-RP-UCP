@@ -7,7 +7,6 @@ if(mysqli_num_rows($result) > 0)
 {
     while($row = mysqli_fetch_assoc($result))
     {
-        //echo "DEBUG: id: " .$row["ID"]. " - Name: " .$row["Poster"]. " " .$row["Title"]. "<br>";
         echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
             <div class="panel-body">
                 <div class="col-md-12">
@@ -23,3 +22,43 @@ if(mysqli_num_rows($result) > 0)
         </div>';
     }
 }
+
+echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
+        <div class="panel-body">
+            <div class="col-md-12">
+                <div class ="news" style="background-color : #E5E6EB;">
+                <h2>Comments</h2>
+                <p><strong>Note:</strong> The comment section and all comments are OOC.</p>';
+
+if(IsLoggedIn())
+{
+    echo '<form method="POST" action="pages/misc/comment_add.php?id='.$_GET['id'].'">
+    <div class="form-group">
+        <div class="form-group">
+        <label for="username">Comment:</label>
+        <input name="message" class="form-control" type="text" id="message" required autofocus>
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+    </form>';
+}
+
+$query = "SELECT * FROM `UCP_Comments` WHERE `NewsID` = ".$_GET["id"]." ORDER BY `ID` DESC";
+$result = mysqli_query($connect, $query);
+
+if(mysqli_num_rows($result) > 0)
+{
+    while($row = mysqli_fetch_assoc($result))
+    {
+        echo '<div class ="news" style="background-color : #FFFFFF; padding:1em; margin:1em;">
+        <small>Comment by '.GetUserName($row["UserID"]).' on '.date("d/m/Y H:i:s", $row["Timestamp"]).'</small><br>
+        <p>'.$row["Message"].'</p></div>';
+    }
+}
+
+echo '</div>
+            </div>
+        </div>
+    </div>';
