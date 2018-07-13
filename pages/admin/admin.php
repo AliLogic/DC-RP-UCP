@@ -82,11 +82,11 @@ if(IsLoggedIn())
                 }
                 else require_once("logs/acp_logs.html");
             }
-            else require_once("acp_main.html");  
+            else require_once("acp_main.php");  
         }
         else
         {
-            require_once("acp_main.html");
+            require_once("acp_main.php");
         }
     }
 }
