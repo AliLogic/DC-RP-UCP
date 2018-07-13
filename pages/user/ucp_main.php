@@ -65,7 +65,6 @@
                                     </tr>';
                                 }
                             }
-                            else echo '<li>No Characters on account.</li>';
                             ?>
                         </tbody>
                         </table>
