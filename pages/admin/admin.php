@@ -56,7 +56,31 @@ if(IsLoggedIn())
             }
             else if($_GET["admin"] == "logs")
             {
-                require_once("acp_ban.html");  
+                if(isset($_GET["sect"]) || !empty($_GET["sect"]))
+                {
+                    if($_GET["sect"] == "attack")
+                    {
+                        require_once("logs/acp_attacklogs.php");
+                    }
+                    else if($_GET["sect"] == "hacker")
+                    {
+                        require_once("logs/acp_hackerlogs.php");
+                    }
+                    else if($_GET["sect"] == "ic")
+                    {
+                        require_once("logs/acp_iclogs.php");
+                    }
+                    else if($_GET["sect"] == "ooc")
+                    {
+                        require_once("logs/acp_ooclogs.php");
+                    }
+                    else if($_GET["sect"] == "pm")
+                    {
+                        require_once("logs/acp_pmlogs.php");
+                    }
+                    else require_once("logs/acp_logs.html");
+                }
+                else require_once("logs/acp_logs.html");
             }
             else require_once("acp_main.html");  
         }
