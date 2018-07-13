@@ -3,9 +3,9 @@
             <div class="col-md-12">
                 <div class ="news" style="background-color : #E5E6EB;">
                     <h4>Attack Logs</h4>
-                    <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+                    <span class="hidden-md-up"><p>You may need to scroll left or right to see the content.</p></span>
                     <div class="table-responsive">
-                        <table class="table table-hover">
+                        <table class="table table-striped table-bordered">
                             <thead>
                             <tr>
                                 <th>Attacker</th>

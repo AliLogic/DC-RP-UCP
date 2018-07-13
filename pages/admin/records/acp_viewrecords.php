@@ -18,9 +18,9 @@ if(isset($_POST["username"]))
     <div class="col-md-12">
         <div class ="news" style="background-color : #E5E6EB;">
         <h2>Bans</h2>
-        <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+        <span class="hidden-md-up"><p>You may need to scroll left or right to see the content.</p></span>
         <div class="table-responsive">
-        <table class="table">
+        <table class="table table-striped table-bordered">
     <thead>
         <tr>
         <th>Banned By</th>
@@ -36,7 +36,7 @@ if(isset($_POST["username"]))
         $accountID = $row["id"];
     }
 
-    $query = "SELECT * FROM `ban_logs` WHERE `BannedDBID` = ".$accountID."";
+    $query = "SELECT * FROM `ban_logs` WHERE `BannedDBID` = ".$accountID." ORDER BY `ID` DESC";
     $result = mysqli_query($connect, $query);
 
     if(mysqli_num_rows($result) >= 1)
@@ -63,9 +63,9 @@ if(isset($_POST["username"]))
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
             <h2>Admin Jail</h2>
-            <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+            <span class="hidden-md-up"><p>You may need to scroll left or right to see the content.</p></span>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table table-striped table-bordered">
         <thead>
             <tr>
             <th>Jailed By</th>
@@ -113,9 +113,9 @@ if(isset($_POST["username"]))
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
             <h2>Kicks</h2>
-            <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+            <span class="hidden-md-up"><p>You may need to scroll left or right to see the content.</p></span>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table table-striped table-bordered">
         <thead>
             <tr>
             <th>Kicked By</th>

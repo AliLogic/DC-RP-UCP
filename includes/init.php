@@ -1,7 +1,7 @@
 <?php
 
 // database
-error_reporting(E_ALL ^ E_WARNING);
+define('DEBUG', true);
 
 define('DB_SERVER', '138.68.147.236');
 define('DB_USERNAME', 'samp_server');
@@ -10,6 +10,12 @@ define('DB_NAME', 'sa-mp');
 
 define('SAMP_IP', '138.68.147.236');
 define('SAMP_PORT', 7777);
+
+if(DEBUG == true)
+{
+  error_reporting(E_ALL);  
+}
+else error_reporting(0);
 
 $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 

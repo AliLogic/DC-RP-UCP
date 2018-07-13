@@ -16,9 +16,10 @@
                 }
                 ?>
                 <h3>Admin Notes for <?php echo $username; ?></h3>
-                <span class="d-none d-sm-block d-md-none"><p>You may need to scroll left or right to see the content.</p></span>
+                <p>You are viewing the administrator notes for <?php echo $username; ?>. The content here is considered private and confidential and is not allowed to be released.</p>
+                <span class="hidden-md-up"><p>You may need to scroll left or right to see the contents of the table.</p></span>
                 <div class="table-responsive">
-                    <table class="table table-hover">
+                    <table class="table table-striped table-bordered">
                         <thead>
                         <tr>
                             <th>Admin</th>

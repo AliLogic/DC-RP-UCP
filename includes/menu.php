@@ -35,29 +35,30 @@
             <ul class="nav navbar-nav">
               <li class="color-white"><a href="index.php?page=home"<i class="fa fa-home"> Home</a></li>
 			  <li class="color-white"><a href="https://dc-rp.com/forum/"><i class="fa fa-comments"></i> Forums</a></li>
-        <li class="color-white"><a href="index.php?page=server"><i class="fa fa-gamepad"></i> Server Information</a></li>
-			  <li class="color-white"><a href="index.php?page=donate"><i class="fa fa-shopping-cart"></i> Donate</a></li>
-			  <li class="color-white"><a href="index.php?page=staff"><i class="fa fa-star"></i> Staff</a></li>
+        <li class="color-white"><a href="index.php?page=server"><i class="fas fa-gamepad"></i> Server Information</a></li>
+			  <li class="color-white"><a href="index.php?page=donate"><i class="fas fa-donate"></i> Donate</a></li>
+			  <li class="color-white"><a href="index.php?page=staff"><i class="fas fa-shield-alt"></i> Staff</a></li>
          <!--<li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>-->
             </ul>
 			      <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a id="start" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-sign-in"></i> Control Panel <span class="caret"></span></a>
+                <a id="start" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fas fa-users-cog"></i> Control Panel <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li class="dropdown-header"></li>
                   <?php 
                   
                   if(!IsLoggedIn())
                   {
-                    echo '<li><a href="index.php?page=login"><img src="images/social/social_samp.jpg"/> Login</a></li>';
+                    echo '<li><a href="index.php?page=login"><i class="fas fa-sign-in" aria-hidden="true"></i> Login</a></li>';
                   }
                   else
                   {
+                    echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user"></i> User Profile</a></li>';
                     if($AdminLevel >= 1)
                     {
-                      echo '<li><a href="index.php?page=acp&admin=main">Server Administrator</a></li>';    
+                      echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';    
                     }
-                    echo '<li><a href="index.php?page=logout"><img src="images/social/social_samp.jpg"/> Logout</a></li>';
+                    echo '<li><a href="index.php?page=logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>';
                   }
                   
                   ?>
