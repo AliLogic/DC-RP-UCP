@@ -10,7 +10,15 @@ include('includes/header.php');
     <?php 
     require_once('includes/menu.php'); 
 
-    $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["DCRP_AccountID"]." OR IPAddress = '".$_SERVER["REMOTE_ADDR"]."' LIMIT 1";
+    $query = '';
+    if(isset($_SESSION["DCRP_AccountID"]))
+    {
+        $query = "SELECT * FROM `bans` WHERE AccountID = ".$_SESSION["DCRP_AccountID"]." OR IPAddress = '".$_SERVER["REMOTE_ADDR"]."' LIMIT 1";
+    }
+    else
+    {
+        $query = "SELECT * FROM `bans` WHERE IPAddress = '".$_SERVER["REMOTE_ADDR"]."' LIMIT 1";
+    }
     $result = mysqli_query($connect, $query);
 
     $banReason = '';
