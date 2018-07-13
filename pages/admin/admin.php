@@ -44,7 +44,15 @@ if(IsLoggedIn())
             }
             else if($_GET["admin"] == "notes")
             {
-                require_once("notes/acp_notes.html");  
+                if(isset($_GET["sect"]) || !empty($_GET["sect"]))
+                {
+                    if($_GET["sect"] == "check")
+                    {
+                        require_once("notes/acp_viewnotes.php");
+                    }
+                    else require_once("notes/acp_notes.html");
+                }
+                else require_once("notes/acp_notes.html");
             }
             else if($_GET["admin"] == "logs")
             {
