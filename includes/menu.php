@@ -53,7 +53,7 @@
                   }
                   else
                   {
-                    echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user"></i> User Profile</a></li>';
+                    echo '<li><a href="index.php?page=ucp&user=main"><i class="fas fa-user"></i> User Profile</a></li>';
                     if(GetAdminLevel() >= 1)
                     {
                       echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';    

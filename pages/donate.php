@@ -6,7 +6,7 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
             <div class ="news" style="background-color : #E5E6EB;">
 
                 <h1 class="color-black text-left"><i class="fa fa-fw fa-money"></i> Donate to Desert County Roleplay</h1><br><br>
-                <strong>Single Namechange £1.00 GBP</strong>
+                <div style="border-style: solid; padding:1em; margin:0.5em;"><strong>Single Namechange £1.00 GBP</strong>
                 <ul>
                 <li>Will be given 1 name change.</li>
                 </ul><br>
@@ -28,8 +28,8 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                     alt="Buy Now">
                     <img alt="" border="0" width="1" height="1"
                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
-                <strong>Single Phone Number Change £1.00 GBP</strong>
+                </form></div>
+                <div style="border-style: solid; padding:1em; margin:0.5em;"><strong>Single Phone Number Change £1.00 GBP</strong>
                 <ul>
                 <li>Will be given 1 phone number change.</li>
                 </ul><br>
@@ -51,8 +51,8 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                     alt="Buy Now">
                     <img alt="" border="0" width="1" height="1"
                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
-                <strong>Bronze Features £3.00 GBP</strong>
+                </form></div>
+                <div style="border-style: solid; padding:1em; margin:0.5em;"><strong>Bronze Features £3.00 GBP</strong>
                 <ul>
                 <li>Will be given 5 free namechange.</li>
                 <li>Will be given 5 free phone number change.</li>
@@ -79,8 +79,8 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                     alt="Buy Now">
                     <img alt="" border="0" width="1" height="1"
                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
-                <strong>Silver Features £6.00 GBP</strong>
+                </form></div>
+                <div style="border-style: solid; padding:1em; margin:0.5em;"><strong>Silver Features £6.00 GBP</strong>
                 <ul>
                 <li>Will be able to make an /ad at 30 seconds instead of the usual 60 seconds.</li>
                 <li>Will be able to purchase a BMX, Quad and ZR-350 (Must still pay the usual IC amount), these cars are just unlocked.</li>
@@ -106,8 +106,8 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                     alt="Buy Now">
                     <img alt="" border="0" width="1" height="1"
                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
-                <strong>Gold Features £10.00 GBP</strong>
+                </form></div>
+                <div style="border-style: solid; padding:1em; margin:0.5em;"><strong>Gold Features £10.00 GBP</strong>
                 <ul>
                 <li>Will be able to purchase BMX, Quad, ZR-350, Cheetah, Turismo, Bullet and Super GT from Dealership (Must still pay the usual IC amount), these cars are just unlocked.</li>
                 <li>Will be given 12 free namechanges.</li>
@@ -132,7 +132,7 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                     alt="Buy Now">
                     <img alt="" border="0" width="1" height="1"
                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
+                </form></div>
                 <br>
                 <p>Once you purchase an item, be sure to inform a Lead Administrator via Forum PM as they will then handle your donation.</p>
             </div>

@@ -60,10 +60,6 @@ include('includes/header.php');
             {
                 require_once("pages/news.php");
             }
-            else if($_GET["page"] == "about")
-            {
-                require_once("pages/about.php");
-            }
             else if($_GET["page"] == "login")
             {
                 if(!IsLoggedIn())
@@ -90,6 +86,10 @@ include('includes/header.php');
             else if($_GET["page"] == "acp")
             {
                 require_once("pages/admin/admin.php");
+            }
+            else if($_GET["page"] == "ucp")
+            {
+                require_once("pages/user/user.php");
             }
             else
             {

@@ -44,6 +44,33 @@ function IsLoggedIn()
     return false;
 }
 
+function GetAdminRankName($adminlevel)
+{
+  $admRank = '';
+  switch($adminlevel)
+  {
+    case 0: 
+      $admRank = "Regular Player";
+      break;
+    case 1:
+      $admRank = "Trial Administrator";
+      break;
+    case 2:
+      $admRank = "General Administrator";
+      break;
+    case 3: 
+      $admRank = "Senior Administrator";
+      break;
+    case 4: 
+      $admRank = "Lead Administrator";
+      break;
+    case 5: 
+      $admRank = "Server Management";
+      break;
+  }
+  return $admRank;
+}
+
 function GetUserName($id)
 {
   // Let's get rid of this mysqli_connect and refer to the global one.
