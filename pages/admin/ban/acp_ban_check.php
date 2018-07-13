@@ -16,6 +16,8 @@
                     ?>
                     <div class="form-group">
                         <input name="username" class="form-control" type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>
@@ -31,6 +33,8 @@
                     ?>
                     <div class="form-group">
                         <input name="ipaddr"class="form-control" type="text" id="ipaddr" required>
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>
@@ -46,6 +50,8 @@
                     ?>
                     <div class="form-group">
                         <input name="gpci"class="form-control" type="text" id="gpci" required>
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>

@@ -28,15 +28,25 @@
                             }
                         }
                         ?>
+                        <div class="form-group">
                         <label for="username">Username:</label>
                         <input name="username" class="form-control" type="text" id="username" required autofocus>
+                        </div>
+                        <div class="form-group">
                         <label for="ipaddr">Reason:</label>
                         <input name="reason" class="form-control" type="text" id="reason" required>
+                        </div>
+                        <div class="form-group">
                         <label for="ipaddr">IP Address (Optional):</label>
                         <input name="ipaddr" class="form-control" type="text" id="ipaddr">
+                        </div>
+                        <div class="form-group">
                         <label for="ipaddr">Expiry Date [MM/DD/YYYY] (Optional):</label>
                         <input name="expire" class="form-control" type="date" id="expire">
+                        </div>
+                        <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>

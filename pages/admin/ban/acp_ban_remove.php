@@ -29,12 +29,15 @@
 
                 ?>
                 <form method="POST" action="pages/admin/ban/banremove.php">
-                    <h3>Remove Ban:</h3>
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input name="username" class="form-control" type="text" id="username" required autofocus>
+                    </div>
+                    <div class="form-group">
                         <label for="ipaddr">IP Address (Optional):</label>
                         <input name="ipaddr" class="form-control" type="text" id="ipaddr">
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </form>

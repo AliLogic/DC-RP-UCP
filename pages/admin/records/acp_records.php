@@ -16,9 +16,13 @@
                             }
                         }
                         ?>
+                        <div class="form-group">
                         <label for="username">Username:</label>
                         <input name="username" class="form-control" type="text" id="username" required autofocus>
+                        </div>
+                        <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
