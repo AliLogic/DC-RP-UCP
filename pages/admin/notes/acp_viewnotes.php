@@ -27,7 +27,7 @@
                     </thead>
                     <tbody>
                     <?php 
-                    $query = "SELECT * FROM `admin_notes` WHERE `AccountID` = ".$_GET['id']."";
+                    $query = "SELECT * FROM `admin_notes` WHERE `AccountID` = ".$_GET['id']." ORDER BY `ID` DESC";
 
                     $result = mysqli_query($connect, $query);
                     $username = '';
