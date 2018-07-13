@@ -1,7 +1,7 @@
 <?php
 if(IsLoggedIn())
 {
-    if($AdminLevel >= 1)
+    if(GetAdminLevel() >= 1)
     {        
         require_once("acp_tabs.php");
         if(isset($_GET["admin"]) || !empty($_GET["admin"]))
@@ -89,4 +89,5 @@ if(IsLoggedIn())
             require_once("acp_main.php");
         }
     }
+    else echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
 }

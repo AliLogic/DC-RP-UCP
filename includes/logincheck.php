@@ -1,6 +1,6 @@
 <?php
 
-if($AdminLevel >= 1)
+if(GetAdminLevel() >= 1)
 {
     echo '<li><a href="index.php?page=acp&admin=main">Server Administrator</a></li>';    
 }

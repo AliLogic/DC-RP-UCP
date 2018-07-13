@@ -31,7 +31,7 @@ $controlpanel = "panel";
 $donate = "donate";
 $servername = "Desert County Roleplay";
 $topnavbarcolor = "#8C5E39";
-$AdminLevel = 0;
+//$AdminLevel = 0;
 $HelperLevel = 0;
 $Banned = false;
 
@@ -84,6 +84,30 @@ function GetMasterID($id)
     }
   }
   return $ownerID;
+}
+
+function GetAdminLevel()
+{
+  $admLevel = 0;
+  if(IsLoggedIn())
+  {
+    // Let's get rid of this mysqli_connect and refer to the global one.
+    $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    if(!mysqli_connect_errno() || $connect !== false)
+    {
+      $query = "SELECT `AdminLevel` FROM `players` WHERE `id` = ".$_SESSION["DCRP_AccountID"]." LIMIT 1";
+    
+      $result = mysqli_query($connect, $query);
+      if(mysqli_num_rows($result) >= 1)
+      {
+        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+        {
+          $admLevel = $row["AdminLevel"];
+        }
+      }
+    }
+  }
+  return $admLevel;
 }
 
 if(IsLoggedIn())
