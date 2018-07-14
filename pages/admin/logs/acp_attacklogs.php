@@ -25,9 +25,9 @@
                                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
                                 {
                                     echo '<tr>
-                                        <td>'.$row["AttackerName"].'</td>
-                                        <td>'.GetUserName($row["CharacterID"]).'</td>
-                                        <td>'.$row["Damage"].'</td>
+                                        <td>'.GetCharacterName($row["AttackerID"]).'</td>
+                                        <td>'.GetCharacterName($row["CharacterID"]).'</td>
+                                        <td>'.$row["Damage"].'</td∂>
                                         <td>'.date("d/m/Y H:i:s", $row["Date"]).'</td>
                                     </tr>';
                                 }

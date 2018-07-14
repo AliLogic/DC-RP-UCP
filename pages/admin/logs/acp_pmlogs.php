@@ -26,7 +26,7 @@
                                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
                                 {
                                     echo '<tr>
-                                        <td>'.GetUserName(GetMasterID($row["AccountID"])).'</td>
+                                        <td>'.GetUserName($row["AccountID"]).'</td>
                                         <td>'.$row["UserName"].'</td>
                                         <td>'.$row["Reciever"].'</td>
                                         <td>'.$row["Message"].'</td>
