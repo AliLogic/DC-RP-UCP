@@ -7,10 +7,7 @@
 <script src="js/retina.min.js"></script>
 
 <!-- DCRP-UCP -->
-<script src="HQ/jquery/dist/jquery.min.js"></script>
-<script src="HQ/metisMenu/dist/metisMenu.min.js"></script>
-<script src="HQ/datatables/media/js/jquery.dataTables.min.js"></script>
-<script src="HQ/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="js/jquery/dist/jquery.min.js"></script>
 <script src="js/HQ.js"></script>
 <script src="/js/ie-emulation-modes-warning.js"></script>
 
