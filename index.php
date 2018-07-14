@@ -1,6 +1,7 @@
 <?php session_start();
 
 include('includes/header.php'); 
+include_once('includes/functions.php');
 
 ?>
   <body style="background: url(<?php echo $background; ?>) repeat center fixed; margin:0; padding:0; -webkit-background-size: cover; background-size: cover;">

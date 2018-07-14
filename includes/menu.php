@@ -47,6 +47,7 @@
                   <li class="dropdown-header"></li>
                   <?php 
                   
+                  include_once('functions.php');
                   if(!IsLoggedIn())
                   {
                     echo '<li><a href="index.php?page=login"><i class="fas fa-sign-in" aria-hidden="true"></i> Login</a></li>';
