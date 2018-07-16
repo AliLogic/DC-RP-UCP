@@ -73,6 +73,18 @@ include_once('includes/functions.php');
                     exit();
                 }
             }
+            else if($_GET["page"] == "register")
+            {
+                if(!IsLoggedIn())
+                {
+                    require_once("pages/register.html");
+                }
+                else
+                {
+                    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
+                    exit();
+                }
+            }
             else if($_GET["page"] == "logout")
             {
                 session_destroy();
@@ -88,9 +100,17 @@ include_once('includes/functions.php');
             {
                 require_once("pages/admin/admin.php");
             }
+            else if($_GET["page"] == "hcp")
+            {
+                require_once("pages/helper/helper.php");
+            }
             else if($_GET["page"] == "ucp")
             {
                 require_once("pages/user/user.php");
+            }
+            else if($_GET["page"] == "createchar")
+            {
+                require_once("pages/user/createchar.php");
             }
             else
             {

@@ -50,14 +50,19 @@
                   include_once('functions.php');
                   if(!IsLoggedIn())
                   {
-                    echo '<li><a href="index.php?page=login"><i class="fas fa-sign-in" aria-hidden="true"></i> Login</a></li>';
+                    echo '<li><a href="index.php?page=login"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> Login</a></li>';
+                    echo '<li><a href="index.php?page=register"><i class="fas fa-plus-square" aria-hidden="true"></i> Register</a></li>';
                   }
                   else
                   {
                     echo '<li><a href="index.php?page=ucp&user=main"><i class="fas fa-user"></i> User Profile</a></li>';
+                    if(GetHelperLevel() >= 1 || GetAdminLevel() >= 4)
+                    {
+                      echo '<li><a href="index.php?page=hcp&helper=main"><i class="fas fa-hands-helping"></i> Community Helper</a></li>';
+                    }
                     if(GetAdminLevel() >= 1)
                     {
-                      echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';    
+                      echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
                     }
                     echo '<li><a href="index.php?page=logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>';
                   }

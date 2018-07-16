@@ -17,7 +17,7 @@ function BBCodeToHTML($content)
     '/(\[color=)(.*?)(\])(.*?)(\[\/color\])/',
     '/(\[size=)(.*?)(\])(.*?)(\[\/size\])/',
   );
-
+  
   $replace = array (
     '<strong>$2</strong>',
     '<em>$2</em>',

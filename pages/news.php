@@ -1,6 +1,6 @@
 <?php
 
-include_once('functions.php');
+include_once('includes/functions.php');
 $query = "SELECT * FROM `News` WHERE `ID` = ".$_GET["id"]." LIMIT 1";
 $result = mysqli_query($connect, $query);
 
