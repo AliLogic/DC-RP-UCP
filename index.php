@@ -77,7 +77,7 @@ include_once('includes/functions.php');
             {
                 if(!IsLoggedIn())
                 {
-                    require_once("pages/register.html");
+                    require_once("pages/register.php");
                 }
                 else
                 {

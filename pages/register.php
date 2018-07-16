@@ -1,6 +1,17 @@
 <div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
     <div class="panel-body">
         <div class="col-md-12">
+            <?php
+            if(isset($_GET["error"]))
+            {
+                if($_GET["error"] == 4)
+                {
+                    echo '<div class="alert alert-danger">
+                        <p><strong>ERROR:</strong> An account with that name already exists!</p>
+                    </div>';
+                }
+            }
+            ?>
             <form action="includes/on_register.php" method="post">
             <div class="form-group">
                 <label for="username">Username:</label><br>

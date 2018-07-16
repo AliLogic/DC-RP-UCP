@@ -16,9 +16,19 @@ if (isset($_POST['username'])
     $password = mysqli_real_escape_string($connect, $_POST["password"]);
     $confirm_password = mysqli_real_escape_string($connect, $_POST["confirm_password"]);
 
+    $query = "SELECT * FROM `players` WHERE `username` = '".$username."' LIMIT 1";
+    $result = mysqli_query($connect, $query);
+
+    if(mysqli_num_rows($result) >= 1)
+    {
+        Header("Location: ../index.php?page=register&error=4"); // Account already exists.
+        exit();
+    }
+
     if($password != $confirm_password)
     {
         Header("Location: ../index.php?page=register&error=1"); // Passwords do not match
+        exit();
     }
 
     $genSalt = mysqli_real_escape_string($connect, generateRandomString(16));
