@@ -1,7 +1,7 @@
 <?php
 if(IsLoggedIn())
 {
-    if(GetAdminLevel() >= 1)
+    if(GetHelperLevel() >= 1 || GetAdminLevel() >= 4)
     {        
         require_once("hcp_tabs.php");
         if(isset($_GET["helper"]) || !empty($_GET["helper"]))
