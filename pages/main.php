@@ -1,5 +1,11 @@
 <?php
 
+if(IsLoggedIn() && !HasPassedTest())
+{
+    echo '<div class="alert alert-warning">
+    <p><strong>WARNING:</strong> You have not completed the roleplay test yet. Click <a href="index.php?page=createchar">here</a> to complete it.</p></div>';
+}
+
 $query = "SELECT * FROM `News` ORDER BY `ID` DESC LIMIT 5";
 $result = mysqli_query($connect, $query);
 
@@ -7,7 +13,6 @@ if(mysqli_num_rows($result) > 0)
 {
     while($row = mysqli_fetch_assoc($result))
     {
-        //echo "DEBUG: id: " .$row["ID"]. " - Name: " .$row["Poster"]. " " .$row["Title"]. "<br>";
         echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
             <div class="panel-body">
                 <div class="col-md-12">
