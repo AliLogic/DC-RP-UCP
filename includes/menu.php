@@ -33,12 +33,12 @@
           </div>
           <div id="navbar1" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="color-white"><a href="index.php?page=home"<i class="fa fa-home"> Home</a></li>
-			  <li class="color-white"><a href="https://dc-rp.com/forum/"><i class="fa fa-comments"></i> Forums</a></li>
-        <li class="color-white"><a href="index.php?page=server"><i class="fas fa-gamepad"></i> Server Information</a></li>
-			  <li class="color-white"><a href="index.php?page=donate"><i class="fas fa-donate"></i> Donate</a></li>
-			  <li class="color-white"><a href="index.php?page=staff"><i class="fas fa-shield-alt"></i> Staff</a></li>
-         <!--<li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>-->
+              <li <?php if($_GET["page"] == "home") { echo 'class="active"'; } ?>><a href="index.php?page=home"<i class="fa fa-home"> Home</a></li>
+              <li><a href="forum"><i class="fa fa-comments"></i> Forums</a></li>
+              <li <?php if($_GET["page"] == "server") { echo 'class="active"'; } ?>><a href="index.php?page=server"><i class="fas fa-gamepad"></i> Server Information</a></li>
+              <li <?php if($_GET["page"] == "donate") { echo 'class="active"'; } ?>><a href="index.php?page=donate"><i class="fas fa-donate"></i> Donate</a></li>
+              <li <?php if($_GET["page"] == "staff") { echo 'class="active"'; } ?>><a href="index.php?page=staff"><i class="fas fa-shield-alt"></i> Staff</a></li>
+              <!--<li class="color-white"><a href="faq.php"><i class="fa fa-question"></i> FAQ</a></li>-->
             </ul>
 			      <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
