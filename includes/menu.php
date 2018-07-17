@@ -64,6 +64,10 @@
                     {
                       echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
                     }
+                    if(GetAdminLevel() >= 5)
+                    {
+                      echo '<li><a href="index.php?page=smcp&manager=main"><i class="fas fa-id-badge"></i> Server Manager</a></li>';
+                    }
                     echo '<li><a href="index.php?page=logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>';
                   }
                   

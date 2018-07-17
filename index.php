@@ -112,6 +112,10 @@ include_once('includes/functions.php');
             {
                 require_once("pages/user/createchar.php");
             }
+            else if($_GET["page"] == "smcp")
+            {
+                require_once("pages/manager/manager.php");
+            }
             else
             {
                 require_once("pages/main.php");
