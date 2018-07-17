@@ -7,6 +7,7 @@
                 <ul class="nav nav-pills nav-justified">
                     <li <?php if($_GET["manager"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=main">Home</a></li>
                     <li <?php if($_GET["manager"] == "password") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=password">Password Management</a></li>
+                    <li <?php if($_GET["manager"] == "secretword") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=secretword">Secret Word Management</a></li>
                 </ul>
             </div>
         </div>

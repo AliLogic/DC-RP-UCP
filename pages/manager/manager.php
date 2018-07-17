@@ -10,6 +10,10 @@ if(IsLoggedIn())
             {
                 require_once("smcp_password.php");
             }
+            else if($_GET["manager"] == "secretword")
+            {
+                require_once("smcp_secretword.php");
+            }
             else require_once("smcp_main.html");
         }
         else
