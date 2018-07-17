@@ -46,7 +46,7 @@ if (isset($_POST['username'])
         </head>
         <body>
         Hello '.$username.'<br><br>
-        Click this link to activate your account at DC-RP: <a href="dc-rp.com/verify.php?id='.$insert_id.'">Click here</a><br><br>
+        Click this link to activate your account at DC-RP: <a href="'.WEB_URL.'/verify.php?id='.$insert_id.'">Click here</a><br><br>
         Regards<br>
         DC-RP Staff.
         </body>

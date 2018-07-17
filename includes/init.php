@@ -1,12 +1,14 @@
 <?php
 
 // database
-define('DEBUG', true);
+define('DEBUG', false);
 
 define('DB_SERVER', '138.68.147.236');
 define('DB_USERNAME', 'samp_server');
 define('DB_PASSWORD', 'IJta0WFpQV9TJl55');
 define('DB_NAME', 'sa-mp');
+
+define('WEB_URL', 'https://dc-rp.com/');
 
 define('SAMP_IP', '138.68.147.236');
 define('SAMP_PORT', 7777);

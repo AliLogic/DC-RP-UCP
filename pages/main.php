@@ -2,8 +2,8 @@
 
 if(IsLoggedIn() && !HasPassedTest())
 {
-    echo '<div class="alert alert-warning">
-    <p><strong>WARNING:</strong> You have not completed the roleplay test yet. Click <a href="index.php?page=createchar">here</a> to complete it.</p></div>';
+    echo '<div class="alert alert-info">
+    <p><strong>WARNING:</strong> You have not completed the roleplay test yet, you will not be able to play on the server until this is completed. Click <a href="index.php?page=createchar">here</a> to complete it.</p></div>';
 }
 
 $query = "SELECT * FROM `News` ORDER BY `ID` DESC LIMIT 5";
