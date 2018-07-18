@@ -1,7 +1,7 @@
-<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
+<div class="panel panel-default" style="background-color: #E5E6EB; border: black 1px solid;">
     <div class="panel-body">
         <div class="col-md-12">
-            <div class ="news" style="background-color : #E5E6EB;">
+            <div class ="news" style="background-color: #E5E6EB;">
 
                 <h1 class="color-black text-left"><i class="fa fa-fw fa-cogs"></i> Server Administrator</h1>
                 <ul class="nav nav-pills nav-justified">

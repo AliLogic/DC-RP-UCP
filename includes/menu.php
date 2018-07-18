@@ -1,5 +1,5 @@
     <!--header navbar -->
-      <nav style="background-color : rgba(0,0,0,0.8); border-bottom: <?php echo $topnavbarcolor; ?> 0.5em solid;" class="navbar navbar-inverse navbar-fixed-top" height="5">
+      <nav style="background-color: rgba(0,0,0,0.8); border-bottom: <?php echo $topnavbarcolor; ?> 0.5em solid;" class="navbar navbar-inverse navbar-fixed-top" height="5">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,7 +21,7 @@
       </nav>
 
     <!-- main menu -->
-      <nav style="background-color : rgba(0,0,0,0.8);" class="navbar navbar-inverse">
+      <nav style="background-color: rgba(0,0,0,0.8);" class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">

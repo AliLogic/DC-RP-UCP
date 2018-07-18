@@ -472,10 +472,10 @@ function ShowAnswers($accountID, $header)
           $answer4 = $row["question_4"];
         }
         
-        echo '<div class="panel panel-default" style="background-color : #E5E6EB; border: black 1px solid;">
+        echo '<div class="panel panel-default" style="background-color: #E5E6EB; border: black 1px solid;">
             <div class="panel-body">
                 <div class="col-md-12">
-                    <div class ="news" style="background-color : #E5E6EB;">
+                    <div class ="news" style="background-color: #E5E6EB;">
                         <h1 class="color-black text-left">'.$header.'</h1>
                         <p><strong>1. You are walking down the street and someone decides to rob you, how would you react?</strong></p>
                         <p>'.nl2br($answer1).'</p>
