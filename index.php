@@ -116,6 +116,10 @@ include_once('includes/functions.php');
             {
                 require_once("pages/manager/manager.php");
             }
+            else if($_GET["page"] == "lacp")
+            {
+                require_once("pages/lead_admin/lead.php");
+            }
             else
             {
                 require_once("pages/main.php");
