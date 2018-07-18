@@ -6,7 +6,7 @@ if(IsLoggedIn() && !HasPassedTest())
     <p><strong>WARNING:</strong> You have not completed the roleplay test yet, you will not be able to play on the server until this is completed. Click <a href="index.php?page=createchar">here</a> to complete it.</p></div>';
 }
 
-$query = "SELECT * FROM `News` ORDER BY `ID` DESC LIMIT 5";
+$query = "SELECT * FROM `News` WHERE `Draft` = 0 ORDER BY `ID` DESC LIMIT 5";
 $result = mysqli_query($connect, $query);
 
 if(mysqli_num_rows($result) > 0)
