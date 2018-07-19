@@ -62,7 +62,7 @@
                     }
                     if(GetAdminLevel() >= 1)
                     {
-                      echo '<li><a href="index.php?page=acpamp;admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
+                      echo '<li><a href="index.php?page=acp&amp;admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
                     }
                     if(GetAdminLevel() >= 4)
                     {

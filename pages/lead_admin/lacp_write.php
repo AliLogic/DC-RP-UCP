@@ -13,7 +13,7 @@ if(IsLoggedIn && GetAdminLevel() >= 4)
         $title = mysqli_real_escape_string($connect, $_POST["news_title"]);
         $text = mysqli_real_escape_string($connect, $_POST["news_text"]);
     
-        $query = "INSERT INTO `News` (`Timestamp`, `Poster`, `Message`, `Title`, `Draft`) VALUES (".time().", '".GetUserName($_SESSION["DCRP_AccountID"])."', '".$title."', '".$text."', 0)";
+        $query = "INSERT INTO `News` (`Timestamp`, `Poster`, `Message`, `Title`, `Draft`) VALUES (".time().", '".GetUserName($_SESSION["DCRP_AccountID"])."', '".$text."', '".$title."', 0)";
         mysqli_query($connect, $query);
         header("Location: ../../index.php?page=news&id=".mysqli_insert_id());
     }
