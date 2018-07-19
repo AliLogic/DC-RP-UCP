@@ -46,7 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+composer.phar
 vendor
+composer.lock
 !vender/autoload.php
 .idea
 .vscode
