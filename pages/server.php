@@ -8,9 +8,9 @@ echo '<div class="panel panel-default" style="background-color : #E5E6EB; border
                 <h1 class="color-black text-left"><i class="fa fa-fw fa-gamepad"></i> Server Information</h1>
                 <p>
                 <ul>
-                <li><strong>SA-MP Server IP:</strong> <a href=samp://dc-rp.com:7777">dc-rp.com:7777</a> (or <a href=samp://dc-rp.com:7777">138.68.147.236:7777</a>)</li>
-                <li><strong>Discord Invite:</strong> <a href=https://discord.gg/YHMxf7F/">discord.gg/YHMxf7F</a> (or <a href=samp://138.68.147.236:7777">138.68.147.236:7777</a>)</li>
-                <li><strong>Teamspeak IP:</strong> 138.68.147.236:9987</li>
+                <li><strong>SA-MP Server IP:</strong> <a href=samp://server.dc-rp.com:7777">server.dc-rp.com:7777</a> (or <a href=samp://138.68.147.236:7777">138.68.147.236:7777</a>)</li>
+                <li><strong>Discord Invite:</strong> <a href=https://discord.gg/YHMxf7F/">discord.gg/YHMxf7F</a>
+                <li><strong>Teamspeak IP:</strong> <a href="ts3server://server.dc-rp.com:9987">server.dc-rp.com:9987</a> (or <a href="ts3server://138.68.147.236:9987">138.68.147.236:9987</a>)</li>
                 </ul>
                 </p>
 
