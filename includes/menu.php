@@ -55,22 +55,22 @@
                   }
                   else
                   {
-                    echo '<li><a href="index.php?page=ucp&user=main"><i class="fas fa-user"></i> User Profile</a></li>';
+                    echo '<li><a href="index.php?page=ucp&amp;user=main"><i class="fas fa-user"></i> User Profile</a></li>';
                     if(GetHelperLevel() >= 1 || GetAdminLevel() >= 4)
                     {
-                      echo '<li><a href="index.php?page=hcp&helper=main"><i class="fas fa-hands-helping"></i> Community Helper</a></li>';
+                      echo '<li><a href="index.php?page=hcp&amp;helper=main"><i class="fas fa-hands-helping"></i> Community Helper</a></li>';
                     }
                     if(GetAdminLevel() >= 1)
                     {
-                      echo '<li><a href="index.php?page=acp&admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
+                      echo '<li><a href="index.php?page=acpamp;admin=main"><i class="fas fa-user-shield"></i> Server Administrator</a></li>';
                     }
                     if(GetAdminLevel() >= 4)
                     {
-                      echo '<li><a href="index.php?page=lacp&lead=main"><i class="fas fa-id-badge"></i> Lead Administrator</a></li>';
+                      echo '<li><a href="index.php?page=lacp&amp;lead=main"><i class="fas fa-id-badge"></i> Lead Administrator</a></li>';
                     }
                     if(GetAdminLevel() >= 5)
                     {
-                      echo '<li><a href="index.php?page=smcp&manager=main"><i class="fas fa-user-circle"></i> Server Manager</a></li>';
+                      echo '<li><a href="index.php?page=smcp&amp;manager=main"><i class="fas fa-user-circle"></i> Server Manager</a></li>';
                     }
                     echo '<li><a href="index.php?page=logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>';
                   }

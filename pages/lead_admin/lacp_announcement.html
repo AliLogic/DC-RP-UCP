@@ -3,11 +3,34 @@
         <div class="col-md-12">
             <div class ="news" style="background-color : #E5E6EB;">
 
-                <h1 class="color-black text-left"><i class="fa fa-fw fa-newspaper"></i> Lead Administrator</h1>
-                <ul class="nav nav-pills nav-justified">
-                    <li <?php if($_GET["lead"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=main">Home</a></li>
-                    <li <?php if($_GET["lead"] == "password") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=password">News</a></li>
-                </ul>
+                <h1 class="color-black text-left"><i class="fa fa-fw fa-newspaper"></i> Announcement</h1>
+                <form method="POST" action="pages/lead_admin/lacp_write.php">
+                    <p><strong>BBCode:</strong><br>
+                    [b]Bold Text[/b] = <strong>Bold Text</strong><br>
+                    [i]Italic Text[/i] = <i>Italic Text</i><br>
+                    [url=url]Text[/url] = <a href="#">URL</a><br>
+                    [url]URL[/url] = <a href="#">URL</a><br>
+                    [s]Strike Text[/s] = <s>Strike Text</s><br>
+                    [img]URL[/img] = Image<br>
+                    [center]Centred text[/center] = Centred Text<br>
+                    [hr][/hr]<br>
+                    [color=#RRGGBB]Coloured Text[/color] = Coloured Text<br>
+                    [size=150]Resized Text[/size] = Resized Text<br>
+                    </p>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="news_text">Announcement Title:</label>
+                            <input name="news_title" class="form-control" type="text" id="news_title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="news_text">Announcement Text:</label>
+                            <textarea class="form-control" name="news_text" rows="10" required autofocus></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

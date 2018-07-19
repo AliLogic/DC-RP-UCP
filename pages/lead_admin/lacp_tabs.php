@@ -5,8 +5,8 @@
 
                 <h1 class="color-black text-left"><i class="fa fa-fw fa-cogs"></i> Lead Administrator</h1>
                 <ul class="nav nav-pills nav-justified">
-                    <li <?php if($_GET["lead"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=main">Home</a></li>
-                    <li <?php if($_GET["lead"] == "password") { echo 'class="active"'; } ?>><a href="index.php?page=smcp&amp;manager=password">News</a></li>
+                    <li <?php if($_GET["lead"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=lacp&amp;lead=main">Home</a></li>
+                    <li <?php if($_GET["lead"] == "announcement") { echo 'class="active"'; } ?>><a href="index.php?page=lacp&amp;lead=announcement">Write News</a></li>
                 </ul>
             </div>
         </div>

@@ -6,10 +6,10 @@
                 <h1 class="color-black text-left"><i class="fa fa-fw fa-cogs"></i> Server Administrator</h1>
                 <ul class="nav nav-pills nav-justified">
                     <li <?php if($_GET["admin"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=acp&admin=main">Home</a></li>
-                    <li <?php if($_GET["admin"] == "ban") { echo 'class="active"'; } ?>><a href="index.php?page=acp&admin=ban">Ban Management</a></li>
-                    <li <?php if($_GET["admin"] == "records") { echo 'class="active"'; } ?>><a href="index.php?page=acp&admin=records">Admin Records</a></li>
-                    <li <?php if($_GET["admin"] == "notes") { echo 'class="active"'; } ?>><a href="index.php?page=acp&admin=notes">Admin Notes</a></li>
-                    <li <?php if($_GET["admin"] == "logs") { echo 'class="active"'; } ?>><a href="index.php?page=acp&admin=logs">Server Logs</a></li>
+                    <li <?php if($_GET["admin"] == "ban") { echo 'class="active"'; } ?>><a href="index.php?page=acp&amp;admin=ban">Ban Management</a></li>
+                    <li <?php if($_GET["admin"] == "records") { echo 'class="active"'; } ?>><a href="index.php?page=acp&amp;admin=records">Admin Records</a></li>
+                    <li <?php if($_GET["admin"] == "notes") { echo 'class="active"'; } ?>><a href="index.php?page=acp&amp;admin=notes">Admin Notes</a></li>
+                    <li <?php if($_GET["admin"] == "logs") { echo 'class="active"'; } ?>><a href="index.php?page=acp&amp;admin=logs">Server Logs</a></li>
                 </ul>
             </div>
         </div>
