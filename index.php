@@ -55,7 +55,23 @@ include_once('includes/functions.php');
             }
             else if($_GET["page"] == "donate")
             {
-                require_once("pages/donate.php");
+                if(!IsLoggedIn())
+                {
+                    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login">';
+                    exit();
+                }
+                else 
+                {
+                    if(HasPassedTest())
+                    {
+                        require_once("pages/donate.html");
+                    }
+                    else
+                    {
+                        echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=createchar">';
+                        exit();
+                    }
+                }
             }
             else if($_GET["page"] == "news")
             {

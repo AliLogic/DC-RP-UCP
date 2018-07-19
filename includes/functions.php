@@ -387,6 +387,33 @@ function GetHelperLevel()
   return $helperLevel;
 }
 
+function ReturnDonatorProducts($product)
+{
+  $prodName = '';
+  switch($product)
+  {
+    case 1:
+      $prodName = 'Single Namechange';
+      break;
+    case 2:
+      $prodName = 'Single Phone Number Change';
+      break;
+    case 3:
+      $prodName = 'Bronze Donator';
+      break;
+    case 4:
+      $prodName = 'Silver Donator';
+      break;
+    case 5:
+      $prodName = 'Gold Donator';
+      break;
+    default:
+      $prodName = 'Unknown Item (Inform Staff!)';
+      break;
+  }
+  return $prodName;
+}
+
 function HasPassedTest()
 {
   if(IsLoggedIn())

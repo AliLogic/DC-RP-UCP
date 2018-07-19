@@ -3,7 +3,15 @@ if(IsLoggedIn())
 {
     if(HasPassedTest())
     {
-        require_once("ucp_main.php");
+        if(isset($_GET["user"]) || !empty($_GET["user"]))
+        {
+            if($_GET["user"] == "donate")
+            {
+                require_once("ucp_donate.php");
+            }
+            else require_once("ucp_main.php");
+        }
+        else require_once("ucp_main.php");
     }
     else 
     {

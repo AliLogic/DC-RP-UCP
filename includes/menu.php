@@ -56,6 +56,7 @@
                   else
                   {
                     echo '<li><a href="index.php?page=ucp&amp;user=main"><i class="fas fa-user"></i> User Profile</a></li>';
+                    echo '<li><a href="index.php?page=ucp&amp;user=donate"><i class="fas fa-user"></i> Donation Codes</a></li>';
                     if(GetHelperLevel() >= 1 || GetAdminLevel() >= 4)
                     {
                       echo '<li><a href="index.php?page=hcp&amp;helper=main"><i class="fas fa-hands-helping"></i> Community Helper</a></li>';
