@@ -14,18 +14,18 @@ if(isset($_GET["id"]))
         {
             if($row["activated"])
             {
-                echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login">';
+                Header("Location: ../../index.php?page=login");
+                exit();
             }
         }
         
         $query = "UPDATE `players` SET `activated` = 1 WHERE `id` = ".$_GET["id"]." LIMIT 1";
         if(mysqli_query($connect, $query))
         {
-            echo "Account Verified, moving you to login page...";
-            sleep(1);
-            echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=login&success=2">';
+            Header("Location: ../../index.php?page=login&success=2");
+            exit();
         }
     }
-    else echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
+    else Header("Location: ../../index.php?page=home");
 }
-else echo '<META HTTP-EQUIV=REFRESH CONTENT="1; index.php?page=home">';
+else Header("Location: ../../index.php?page=home");

@@ -54,9 +54,8 @@ if(IsLoggedIn())
         }
         else
         {
-            header("Location: ".WEB_URL."/index.php?page=home");
+            Header("Location: ../../index.php?page=home");
         }
-    
         
         $transaction = new \PayPal\Api\Transaction();
         $transaction->setAmount($amount);
@@ -74,7 +73,7 @@ if(IsLoggedIn())
         try 
         {
             $payment->create($apiContext);
-            header("Location: ".$payment->getApprovalLink());
+            echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$payment->getApprovalLink().'">';
         }
         catch (\PayPal\Exception\PayPalConnectionException $ex) 
         {
@@ -83,7 +82,7 @@ if(IsLoggedIn())
             echo $ex->getData();
         }
     }
-    else header("Location: ".WEB_URL."/index.php?page=home");
+    else Header("Location: ../../index.php?page=home");
 }
-else header("Location: ".WEB_URL."/index.php?page=login");
+else Header("Location: ../../index.php?page=login");
 
