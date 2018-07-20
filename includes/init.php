@@ -22,7 +22,8 @@ define('SAMP_PORT', 7777);
 
 if(DEBUG == true)
 {
-  error_reporting(E_ALL);  
+  error_reporting(E_ALL);
+  ini_set('display_errors', '1');
 }
 else error_reporting(0);
 
@@ -56,7 +57,10 @@ if(PP_LIVE == true)
 {
   $apiContext->setConfig(
     array(
-      'mode' => 'live'
+      'mode' => 'live',
+      'log.LogEnabled' => true,
+      'log.FileName'   => 'PayPal.log',
+      'log.LogLevel'   => 'FINE'
     )
   );
 }
