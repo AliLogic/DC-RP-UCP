@@ -7,7 +7,20 @@
                 <div class ="news" style="background-color: #E5E6EB;">
                     <p><strong>Account Name:</strong> <?php echo GetUserName($_SESSION["DCRP_AccountID"]); ?></p>
                     <p><strong>Account ID:</strong> #<?php echo $_SESSION["DCRP_AccountID"]; ?></p>
-                    <p><strong>Account Rank:</strong> <?php echo GetAdminRankName(GetAdminLevel()); ?></p>
+                <?php
+                if(GetHelperLevel() >= 1)
+                {
+                    echo "<p><strong>Account Rank:</strong> ".GetHelperRankName(GetHelperLevel())."</p>";
+                }
+                else if(GetAdminLevel() >= 1)
+                {
+                    echo "<p><strong>Account Rank:</strong> ".GetAdminRankName(GetAdminLevel())."</p>";
+                }
+                else
+                {
+                    echo "<p><strong>Account Rank:</strong> Regular Player</p>";
+                }
+                ?>
                 </div>
             </div>
         </div>

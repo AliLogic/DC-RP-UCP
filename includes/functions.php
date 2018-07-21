@@ -181,6 +181,62 @@ function GetWeaponName($weaponID)
   return $wepName;
 }
 
+function GetCommunityRank($id)
+{
+  echo "1";
+  $rankName = 'Regular Player';
+  $helperRank = 0;
+  $adminRank = 0;
+  $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+  if(!mysqli_connect_errno() || $connect !== false)
+  {
+    echo "2";
+    $query = "SELECT `AdminLevel`, `HelperLevel` FROM `players` WHERE `id` = ".$_SESSION["DCRP_AccountID"]." LIMIT 1";
+  
+    echo "3";
+    $result = mysqli_query($connect, $query);
+    if(mysqli_num_rows($result) >= 1)
+    {
+      echo "4";
+      while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+      {
+        echo "5";
+        $adminRank = $row["AdminLevel"];
+        $helperRank = $row["HelperLevel"];
+      }
+    }
+  }
+
+  echo "6";
+  if($helperRank >= 1)
+  {
+    echo "helper";
+    $rankName = GetHelperRankName($adminRank);
+  }
+  if($adminRank >= 1)
+  {
+    echo "admin";
+    $rankName = GetAdminRankName($adminRank);
+  }
+  echo "show";
+  return $rankName;
+}
+
+function GetHelperRankName($adminlevel)
+{
+  $admRank = '';
+  switch($adminlevel)
+  {
+    case 0: 
+      $admRank = "Regular Player";
+      break;
+    case 1:
+      $admRank = "Community Helper";
+      break;
+  }
+  return $admRank;
+}
+
 function GetAdminRankName($adminlevel)
 {
   $admRank = '';
