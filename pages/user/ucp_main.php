@@ -8,18 +8,16 @@
                     <p><strong>Account Name:</strong> <?php echo GetUserName($_SESSION["DCRP_AccountID"]); ?></p>
                     <p><strong>Account ID:</strong> #<?php echo $_SESSION["DCRP_AccountID"]; ?></p>
                 <?php
+                $rankName = 'Regular Player';
                 if(GetHelperLevel() >= 1)
                 {
-                    echo "<p><strong>Account Rank:</strong> ".GetHelperRankName(GetHelperLevel())."</p>";
+                    $rankName = GetHelperRankName(GetHelperLevel());
                 }
-                else if(GetAdminLevel() >= 1)
+                if(GetAdminLevel() >= 1)
                 {
-                    echo "<p><strong>Account Rank:</strong> ".GetAdminRankName(GetAdminLevel())."</p>";
+                    $rankName = GetAdminRankName(GetAdminLevel());
                 }
-                else
-                {
-                    echo "<p><strong>Account Rank:</strong> Regular Player</p>";
-                }
+                echo "<p><strong>Account Rank:</strong> ".$rankName."</p>";
                 ?>
                 </div>
             </div>
