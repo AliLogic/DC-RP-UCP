@@ -2,7 +2,7 @@
     <div class="panel-body">
         <div class="col-md-12">
             <?php
-            if(isset($_GET["error"]))
+            /*if(isset($_GET["error"]))
             {
                 if($_GET["error"] == 4)
                 {
@@ -10,9 +10,9 @@
                         <p><strong>ERROR:</strong> An account with that name already exists!</p>
                     </div>';
                 }
-            }
+            }*/
             ?>
-            <form action="includes/on_register.php" method="post">
+            <!--<form action="includes/on_register.php" method="post">
             <div class="form-group">
                 <label for="username">Username:</label><br>
                 <input name="username" type="text" class="form-control" id="username" required autofocus><br>
@@ -34,12 +34,13 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             <button type="reset" class="btn btn-default">Reset</button>
-            </form>
+            </form>-->
+            <p>Registration via UCP has been temporarily disabled. You must register in-game via the SA-MP server using a master name, for example "Username" instead of "Firstname_Lastname".</p>
         </div>
     </div>
 </div>
 
-<script language="javascript" type="text/javascript">
+<!--<script language="javascript" type="text/javascript">
     function check(input) 
     {
         if (input.value != document.getElementById('password').value) 
@@ -52,4 +53,4 @@
             input.setCustomValidity('');
         }
     }
-</script>
+</script>-->

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+/*session_start();
 
 require_once('../includes/config.php');
 require_once('../includes/init.php');
@@ -63,5 +63,5 @@ if (isset($_POST['username'])
     else Header("Location: ../index.php?page=register&error=2"); // Query error.
 
 }
-else Header("Location: ../index.php?page=register&error=3"); // Fields empty
+else Header("Location: ../index.php?page=register&error=3"); // Fields empty*/
 ?>

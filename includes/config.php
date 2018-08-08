@@ -5,7 +5,7 @@
 $websitetitle = "Desert County Roleplay";
 $websitename = "Desert County Roleplay";
 $websitedescription = "SA-MP roleplaying community based in Bone County.";
-$siteversion = "1.2.2";
+$siteversion = "1.2.3";
 $sampVersion = "0.3.DL";
 $urlsite = "/";
 $copydate = "2018";
