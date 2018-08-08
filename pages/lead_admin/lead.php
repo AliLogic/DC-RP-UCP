@@ -10,6 +10,10 @@ if(IsLoggedIn())
             {
                 require_once("lacp_announcement.html");
             }
+            else if($_GET["lead"] == "aooc")
+            {
+                require_once("lacp_aooc.php");
+            }
             else require_once("lacp_main.html");
         }
         else require_once("lacp_main.html");

@@ -7,6 +7,7 @@
                 <ul class="nav nav-pills nav-justified">
                     <li <?php if($_GET["lead"] == "main") { echo 'class="active"'; } ?>><a href="index.php?page=lacp&amp;lead=main">Home</a></li>
                     <li <?php if($_GET["lead"] == "announcement") { echo 'class="active"'; } ?>><a href="index.php?page=lacp&amp;lead=announcement">Write News</a></li>
+                    <li <?php if($_GET["lead"] == "aooc") { echo 'class="active"'; } ?>><a href="index.php?page=lacp&amp;lead=aooc">In-Game Announcement</a></li>
                 </ul>
             </div>
         </div>
