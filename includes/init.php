@@ -8,10 +8,8 @@ define('DB_USERNAME', 'samp_server');
 define('DB_PASSWORD', 'IJta0WFpQV9TJl55');
 define('DB_NAME', 'sa-mp');
 
-//define('PP_CLIENT_ID', 'AUtDYCCNipKzglNiRG3lsWApj38WJBqYnIYv1U8ha1j07TvOU_gM24YvDEX5e8h3WCRbGV7JS9Sn_C12');
-//define('PP_SECRET', 'EJuSCZu_rKGDDIANknn11-h8XWe8AA8IQOkmUdGCQ9qs_XlhrYPVxxsjcmz3Bd1ZciYcPuprFTJithpJ');
-define('PP_CLIENT_ID', 'ASYLqunNSyK4LaqC-5B9SkBrB9Yugnkjo0ZclnD7iVg22QD79UEE04in8wbgN-AEuYA2Uu2d8v1wenOS');
-define('PP_SECRET', 'EELyLvWCx2OLsXa-xMfg3DKx79GHrf2-RjpgJ0Eoq99A-iMRSz260nqBDWhFEDi6AAhw-8A1SzOJuUWb');
+define('PP_CLIENT_ID', 'CHANGE_ME');
+define('PP_SECRET', 'CHANGE_ME');
 define('PP_LIVE', true);
 
 define('WEB_URL', 'https://dc-rp.com');
